@@ -1,0 +1,13 @@
+////////////////////////////////////
+///// FUNÇAO RETORNO " RETURN "/////
+////////////////////////////////////
+
+function retornaNumero(x){
+    return 2*x
+
+}
+  console.log(retornaNumero(4))
+
+
+  
+
