@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/tes');
+mongoose.connect('mongodb://127.0.0.1:27017/test');
 
 async function main () {
     const Material = mongoose.model('Material',
@@ -70,15 +70,15 @@ async function main () {
     //     console.log(await Material.create(material))
     // }
 
-    // async function criaMultiplosMateriais(materiais, vezes) {
-    //     let i = 0
-    //     while(i < vezes) {
-    //         // console.log(materiais[i])
-    //         //    console.log(await Material.findOneAndDelete(materiais[i]))
-    //         console.log(await Material.create(materiais[i]))
-    //         i++
-    //     }
-    // }
+    async function criaMultiplosMateriais(materiais, vezes) {
+        let i = 0
+        while(i < vezes) {
+            // console.log(materiais[i])
+            //    console.log(await Material.findOneAndDelete(materiais[i]))
+            console.log(await Material.create(materiais[i]))
+            i++
+        }
+    }
 
     // const criacoes = [
     //     {
